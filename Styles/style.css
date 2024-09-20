@@ -1,0 +1,312 @@
+/*========CONFIGS==========*/
+@import url("./fonts.css");
+
+:root{
+     --rosa-claro:rgb(255, 190, 212);
+     --rosa:rgb(255, 0, 157);
+     --vermelho:rgb(255, 86, 86);
+     --verde:rgb(125, 255, 125);
+     --branco:rgb(255, 255, 255);
+}
+
+/*============PAGE===============*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    scroll-snap-type: y proximity;
+}
+
+
+/*=================HEADER=================*/
+header{
+    position: fixed;
+    background-color: var(--rosa);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+
+    & img{
+        width: 60px;
+        height: 60px;
+    }
+
+    & .icon-menu{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    & .icon-perfil{
+        width: 30px;
+        height:30px;
+        margin-right: 20px;
+    }
+}
+
+    /*links*/
+    .links-area{
+        display: flex;
+        height: 60px;
+        padding:15px 10px;
+
+        & .links{
+            font-family: SunnySpells;
+            font-size: 25px;
+            padding-inline: 10px;
+            color: var(--branco);
+            text-decoration-line: none;
+        }
+
+        & #link4{
+            padding-right: 20px;
+        }
+    }
+
+/*====================CONTENT==================*/
+
+
+    /*LOGO AREA*/
+        .logo-area{
+            display: flex;
+            justify-content: space-evenly;
+            background-image: url("../Images/background-cupcakes.png");
+            border-bottom:solid var(--rosa-claro) 4px ;
+            padding-inline: 150px;
+            scroll-snap-align: start;
+        }
+
+        .slogan{
+            font-family:Mylove;
+            font-size: 50px;
+            margin-top: 180px;
+        }
+
+        .logo{
+            width: 400px;
+            height: 400px;
+        }
+
+
+    /*OFFSALE AREA*/
+        .offsale-area{
+            background-color: var(--branco);
+            height: 100%;
+            margin-bottom: 120px;
+            scroll-snap-align: start;
+        }
+
+        .offsale-title-area{
+            color: black;
+            font-weight: 300;
+            font-size: 40px;
+            font-family: GeorgeCafe;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .cards{
+            display: flex;
+            justify-content: center;
+        }
+
+        #cards-line1{
+            display: show;
+        }
+
+        #cards-line2{
+            display: none;
+        }
+        
+        .cards-bolos{
+            display: flex;
+            justify-content: space-around;
+            gap: 25px;
+        }
+        
+        .cards-category-area{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .category-area{
+            width: 1060px;
+            display: flex;
+        }
+
+        .categories{
+            padding-top: 40px;
+            padding-bottom: 10px;
+            user-select: none;
+            display: flex;
+            gap: 5px;
+        }
+
+        .category{
+            color:black;
+            width: 100px;
+            height: 40px;
+            font-family: GeorgeCafe;
+            font-size: 30px;
+            font-weight: 500px;
+            text-align: center;
+            padding-top: 5px;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.5s ease;
+        }
+
+        #category1.active, #category2.active {
+            border-bottom: 2px solid var(--rosa);
+        }
+        
+        .box{
+            display: block;
+            width: 250px;
+            height: 370px;
+            z-index: 0;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .image-box img{
+            width: 200px;
+            height: 200px;
+            margin-inline:25px;
+            margin-top: 15px;
+        }
+
+        .info-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top:0.6rem;
+        }
+
+        .info-box{
+            & #name{
+                font-family: GeorgeCafe;
+                font-weight: 800;
+                font-size: 25px;
+            }
+
+            & #desc{
+                font-family: GeorgeCafe;
+                font-size: 15px;
+                font-weight: 500;
+                text-align: center;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeInUp 0.6s ease-in-out;
+        }
+        
+        
+        
+        
+
+    /*NEWS AREA*/
+        .news-area{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--rosa-claro);
+            background-image: url("../Images/pattern_checkerboard_1_14_0-0_0_1__ffdbe7_ffbdd3.png");
+            border-top: 4px solid var(--verde);
+            scroll-snap-align: start;
+
+            & .news-area-content{
+                width: 1200px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            & .news{
+                display: flex;
+            }
+        }
+
+         .content-news{
+            display: flex;
+
+            & .left-content-news{
+                display: flex;
+                flex-direction: column;
+            }
+
+            & .right-content-news{
+                display: flex;
+            }
+
+        }
+
+        .img-news img{
+            width: 400px;
+            height: 400px;
+            border-radius: 400px;
+            border: 18px dashed var(--rosa);
+            background-color: white;
+            box-shadow: 18px 18px 10px -1px rgba(0,0,0,0.22);
+        }
+
+        .title-news{
+            font-size: 80px;
+            color: var(--rosa);
+            font-family: MilkPeach;
+            text-align: center;
+            text-shadow: 2px 3px 1px var(--verde);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=======HOVER & EFFECTS=========*/
+#link1:hover{
+    color:var(--rosa-claro);
+    cursor: pointer;
+}
+
+.icon-menu:hover{
+    opacity: 0.5;
+}
+
+.category:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.box:hover{
+    opacity: 0.8;
+}

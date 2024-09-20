@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="./Styles/fonts.css">
+    <link rel="stylesheet" href="./Styles/form.css">
+    <link rel="shortcut icon" href="./Images/CherryCakes(cereja).png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Cherry Cakes</title>
+</head>
+
+<body>
+    <!--==========================FORM=============================-->
+
+    <div class="login-area">
+        <div class="box-login-container">
+            <div class="box-login-content">
+
+                <div class="box-left">
+                    <div class="boxlogin">
+                        <div class="header_form">
+                            <p class="form_txt">FAZER LOGiN</p>
+                            <img class="chocolate-form" src="./Images/chocolate.png">
+                        </div>
+                        
+                        <form action="../index.html">
+                            <div class="input">
+                                <img src="./Images/icon-mail-black.png" alt="">
+                                <input id="mail" type="email" placeholder="Email" name="email" maxlength="50" required>
+                            </div>
+                            <div class="input">
+                                <img src="./Images/icon-lock-black.png" alt="">
+                                <input id="password" type="password" placeholder="Senha" name="senha" maxlength="16" required>
+                                <i id="btn-eye" class="bi bi-eye" onclick="btnEye()"></i>
+                            </div>
+                            <input type="submit" class="submit_btn" value="LOGiN" id="submit_btn">
+                        </form>
+                    </div>
+                    <div class="info_area">
+                        <p class="info_area_txt1">Não tem uma conta? <a href="./Pages/cadastro.html">Cadastrar-se</a></p>
+                        <button class="btn_entrar_google">
+                            <p class="btn-google-txt">Entrar com Google</p>
+                            <img src="./Images/icon_google.png" width="30px" height="30px">
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="box-right">
+                    <img class="btn-close-popup" src="./Images/icon-close.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--===========================================================-->
+
+
+
+
+    <header>
+        <a href="./index.html"><img src="./Images/CherryCakes(cereja)[vetor].png"></a>
+        <section class="links-area">
+            <div class="links">
+                <a class="links" id="link1">LOGiN</a>
+                <a href="./Pages/cardapio.html" class="links" id="link3">CARDAPiO</a>
+                <a href="" class="links" id="link4">CONTATO</a>
+            </div> 
+            <div class="perfil">
+                <img class="icon-perfil" src="./Images/icon-perfil.png">
+            </div>
+            <div>
+                <a href=""><img src="./Images/icon-menu.png" class="icon-menu"></a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!--======================LOGO AREA=====================-->
+        <section class="logo-area">
+            <div class="left-logo-area">
+                <img class="logo" src="./Images/CherryCakes(logo).png" alt="">
+            </div>
+            <div class="right-logo-area">
+                <div>
+                    <p class="slogan">Um novo jeito de ser doce!</p>
+                </div>
+            </div>
+        </section>
+
+        <!--=====================OFFSALE AREA=====================-->
+        <section class="offsale-area">
+            <section class="offsale-title-area">
+                <div>
+                    <p class="title-offsale">MAIS PEDIDOS</p>
+                </div>
+            </section>
+
+            <!--CARDS LINE 1-->
+            <section class="cards-category-area">
+                <div class="category-area">
+                    <div class="categories">
+                        <div>
+                            <p class="category" id="category1" onclick="changeCategory('bolos')">Bolos</p>
+                        </div>
+                        <div></div>
+                            <p class="category" id="category2" onclick="changeCategory('doces')">Doces</p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </section>
+            <section class="cards" id="cards-line1">
+                    <div class="cards-bolos">
+                        <div class="box" id="box1">
+                            <div class="image-box">
+                                <img src="./Images/cake-chocolate.jpg" alt="">
+                            </div>
+                            <div class="info-box">
+                                <span id="name">Bolo de Chocolate</span>
+                                <span id="desc">Recheio de chocolate, creme de chocolate e cobertura de chocolate</span>
+                            </div>
+                        </div>
+    
+                        <div class="box" id="box2">
+                            <div class="image-box">
+                                <img src="./Images/cake-strawberry.png" alt="">
+                            </div>
+                            <div class='info-box'>
+                                <span id="name">Bolo de Morango</span>
+                                <span id="desc">Recheio de morango e cobertura de chocolate branco</span>
+                            </div>
+                        </div>
+    
+                        <div class="box" id="box3">
+                            <div class="image-box">
+                                <img src="./Images/cake-pineapple.png" alt="">
+                            </div>
+                            <div class="info-box">
+                                <span id="name">Bolo de Abacaxi</span>
+                                <span id="desc">Recheio de abacaxi e cobertura de creme</span>
+                            </div>
+                        </div>
+    
+                        <div class="box" id="box4">
+                            <div class="image-box">
+                                <img src="./Images/cake-redvelvet.png" alt="">
+                            </div>
+                            <div class="info-box">
+                                <span id="name">Bolo de Red Velvet</span>
+                                <span id="desc">Recheio de butter cream e cobertura de chocolate branco</span>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+    
+    
+            <!--CARDS LINE 2-->
+            <section class="cards" id="cards-line2">
+                    <div class="cards-bolos" id="cards-category2">
+                        <div class="box" id="box1">
+                            <div class="image-box">
+                                <img src="./Images/candy-cherrypie.jpg" alt="">
+                            </div>
+                            <div class="info-box">
+                                <span id="name">Torta de Cereja</span>
+                                <span id="desc">Torta com recheio de calda de cereja</span>
+                            </div>
+                        </div>
+    
+                        <div class="box" id="box2">
+                            <div class="image-box">
+                                <img src="./Images/candy-brownie.png" alt="">
+                            </div>
+                            <div class='info-box'>
+                                <span id="name">Brownie</span>
+                                <span id="desc">Mini bolo de chocolate</span>
+                            </div>
+                        </div>
+    
+                        <div class="box" id="box3">
+                            <div class="image-box">
+                                <img src="./Images/candy-cherrycupcake.webp" alt="">
+                            </div>
+                            <div class="info-box">
+                                <span id="name">Cherry Cupcake</span>
+                                <span id="desc">Cupcake sabor cereja</span>
+                            </div>
+                        </div>
+    
+                        <div class="box" id="box4">
+                            <div class="image-box">
+                                <img src="./Images/candy-cookies.webp" alt="">
+                            </div>
+                            <div class="info-box">
+                                <span id="name">Cookies</span>
+                                <span id="desc">Biscoito amanteigado com gotas de chocolate</span>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </section>
+        
+        <section class="news-area">
+            <div class="news-area-content">
+                <div class="news">
+                    <div class="content-news">
+                        <div class="left-content-news">
+                            <div class="title-news">
+                                <p>Novo Lançamento</p>
+                            </div> 
+                        </div>
+                        <div class="right-content-news">
+                            <div class="img-news">
+                                <img src="./Images/cherry coffee.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./Scripts/password-eye.js"></script>
+    <script src="./Scripts/popup.js"></script>
+    <script src="./Scripts/category-offsale.js"></script>
+
+</body>
+</html>
